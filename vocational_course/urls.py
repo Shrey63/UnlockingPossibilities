@@ -9,10 +9,10 @@ path('ProfessorSignIn',views.getProfessorSignIn),
 path('ProfessorSignUp',views.getProfessorSignUp),
 path('StudentSignIn',views.getStudentSignIn),
 path('StudentSignUp',views.getStudentSignUp),
+path('',views.home),
+path('teacher',views.getTeacher),
+path('contact',views.getContact),
+path('about',views.getAbout),
+path('posts',views.getPost),
 
-
-# path('LogIn',views.userLogin),
-# path('', views.home),
-path('Logout',views.logout)
-# path('home', views.home, name='home'),
-]
+path('Logout',views.logout)]
