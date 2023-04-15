@@ -14,5 +14,5 @@ path('teacher',views.getTeacher),
 path('contact',views.getContact),
 path('about',views.getAbout),
 path('posts',views.getPost),
-
+path('courses',views.getCourses),
 path('Logout',views.logout)]
