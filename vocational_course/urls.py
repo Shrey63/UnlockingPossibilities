@@ -27,5 +27,6 @@ path('posts',views.getPost),
 path('courses',views.getCourses),
 path('Logout',views.logout),
 path('coursedetails',views.getCourseDetails),
-path('addposts',views.getAddPosts)
+path('addposts',views.getAddPosts),
+path('getpostadded',views.getPostAdded)
 ]
