@@ -5,14 +5,21 @@ from django.contrib import admin
 from django.urls import path
 from vocational_course import views
 urlpatterns = [
-path('ProfessorSignIn',views.getProfessorSignIn),
-path('ProfessorSignUp',views.getProfessorSignUp),
-path('StudentSignIn',views.getStudentSignIn),
-path('StudentSignUp',views.getStudentSignUp),
+#just get all the 4 forms
+path('ProfessorSignInPage',views.getProfessorSignInPage),
+path('ProfessorSignUpPage',views.getProfessorSignUpPage),
+path('StudentSignInPage',views.getStudentSignInPage),
+path('StudentSignUpPage',views.getStudentSignUpPage),
+
 path('',views.home),
-path('',views.home),
-path('getSignUp',views.getCanSignUp),
-path('getProfSignUp',views.getProfSignUp),
+
+#action of all the 4 forms
+path('getSignedUp',views.getCanSignedUp),
+path('getSignedIn',views.getCanSignedIn),
+path('getProfSignedUp',views.getProfSignedUp),
+path('getProfSignedIn',views.getProfSignedIn),
+
+
 path('teacher',views.getTeacher),
 path('contact',views.getContact),
 path('about',views.getAbout),

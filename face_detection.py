@@ -1,12 +1,15 @@
-
 import cv2
+import openai
+import pyttsx3
+import speech_recognition as sr
 import time
+from deepface import DeepFace
+
 # Set delay time in seconds
 delay = 2
 
 # Delay for specified time
 time.sleep(delay)
-
 # Open default camera
 webCam = cv2.VideoCapture(0)
 
@@ -22,28 +25,25 @@ if success:
 
 # Release camera resources
 webCam.release()
+
 cv2.destroyAllWindows()
 
-#detect emotion
-import cv2
 img=cv2.imread('frame1.jpg')
 from pprint import pprint
 import matplotlib.pyplot as plt
 plt.imshow(img)
-from deepface import DeepFace
+print(type(img))
 plt.imshow (cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
+print(type(img))
 predictions=DeepFace.analyze(img)
 print(f"The dominant emotion is {predictions[0]['dominant_emotion']}")
 
 
-
 #Action of Speaking bot according to emotion of user
-import openai
-import pyttsx3
-import speech_recognition as sr
-import time
+
 # Set your OpenAI API key
-openai.api_key="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"
+openai.api_key="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"
+
 # Initialize the text-to-speech engine
 engine=pyttsx3.init()
 
