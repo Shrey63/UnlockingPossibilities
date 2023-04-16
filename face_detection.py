@@ -73,7 +73,7 @@ def speak_text (text):
 
 if predictions[0]['dominant_emotion']!="happy":
     text = "I am an autistic child trying to focus on my vocational subject coures video and i am feeling {predictions[0]['dominant_emotion']}. Please tell me or suggest me something stay foccused"
-    response = generate_response (text)
+    response = generate_response(text)
     print (f"GPT-3 says: {response}")
     speak_text(response)
 
