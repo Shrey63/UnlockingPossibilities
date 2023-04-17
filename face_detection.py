@@ -42,7 +42,7 @@ print(f"The dominant emotion is {predictions[0]['dominant_emotion']}")
 #Action of Speaking bot according to emotion of user
 
 # Set your OpenAI API key
-openai.api_key="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"
+openai.api_key="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"
 
 # Initialize the text-to-speech engine
 engine=pyttsx3.init()
